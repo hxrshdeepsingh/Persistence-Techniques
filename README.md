@@ -5,7 +5,7 @@ Methods to be persistent in Victim's linux machine or sever.
 
 
 
-[What is cron ?](https://linktodocumentation)
+[What is cron ?](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/)
 
 
 
